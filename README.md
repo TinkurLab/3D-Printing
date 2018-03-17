@@ -3,6 +3,12 @@
 ## Overview
 This repo contains code and docs for Tinkurlab's Anycubic Kossel Linear 3D Printer.
 
+## Collaboration
+
+Check out this project's Waffle.io Board!
+
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/TinkurLab/tinkurlab-anycubic-3d-printer.svg?columns=all)](https://waffle.io/TinkurLab/tinkurlab-anycubic-3d-printer)
+
 ## Calibration / Leveling
 
 ### Overview

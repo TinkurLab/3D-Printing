@@ -1,7 +1,9 @@
 # Tinkurlab's Anycubic Kossel Linear 3D Printer
 
 ## Overview
-This repo contains code and docs for Tinkurlab's Anycubic Kossel Linear 3D Printer.
+This repo contains code and docs for Tinkurlab's Anycubic Kossel Linear Plus 3D Printer.
+
+This repo also contains 3D models and printing info that aren't associated with another TinkurLab repo.
 
 ## Collaboration
 
@@ -9,9 +11,23 @@ Check out this project's Waffle.io Board!
 
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/TinkurLab/tinkurlab-anycubic-3d-printer.svg?columns=all)](https://waffle.io/TinkurLab/tinkurlab-anycubic-3d-printer)
 
-## Calibration / Leveling
+## Toolchain
 
-### Overview
+### Software
+* [Tinkercad](https://www.tinkercad.com/) for 3D modeling
+* [Simplify 3D](https://www.simplify3d.com/) for 3D model slicing, supports, and printing
+* GitHub for source code and docs
+* [Thingiverse](https://www.thingiverse.com/) to find 3D models and host TinkurLab 3D models
+* Repetier Host, Mesh Mixer, and other tools for specific needs
+
+### Hardware
+*  Anycubic Kossel Linear Plus 3D Printer
+*  Hatchbox filament
+*  Tweezers, pliers for model removal
+*  Micro cutters, sand paper, files for model cleanup post printing
+*  Painters tape for bed coverage
+
+## Calibration / Leveling
 
 This procedure should be performaned when any major changes are made to the printer - assembling / disassembling, moving bed, or when the printer is out of level based on print results.
 
@@ -43,25 +59,6 @@ This procedure should be performaned when any major changes are made to the prin
 
 See https://www.youtube.com/watch?v=5nD6LLx32U0 which is basis for these steps.
 
-## Updating Printer Firmware an Configs
-
-**This is a work in progress and isn't currently complete / working**
-
-* Download desired Marlin firmware version
-* In Adrudino IDE
-    * Open Marlin.ino
-    * Power on printer and configure
-        * Board: Arduino Mega
-        * Processor: ATmega2560
-        * Port: SLAB_USBtoUART
-    * Open Serial panel and configure 
-        * Speed: 115200 baud
-        * Send: NL (new line) and CR (carriage return)
-    * Replace configuration.h and configuration_adv.h files in /marlin directory w/ Delta Kossel Pro files from /example directory.
-* In Configuration.h
-    * `DELTA_HEIGHT=330`
-    * `DELTA_RADIUS=100`
-
 ## GCode Cheatsheet
 
 Home
@@ -83,6 +80,11 @@ Fan On
 * [Repetier Host Mac Docs](https://www.repetier.com/documentation/repetier-host-mac/manual-control/)
 * [Slic3r Docs](http://manual.slic3r.org/intro/overview)
 * [GCode Reference](http://reprap.org/wiki/G-code)
+* Simplify 3D
+    - [Video Tutorials](https://www.simplify3d.com/support/videos/)
+    - [Written Tutorials](https://www.simplify3d.com/support/articles/)
+    - [Print Quality Guide](https://www.simplify3d.com/support/print-quality-troubleshooting/)
+    - [Print Material Guide](https://www.simplify3d.com/support/materials-guide/)
 
 
 

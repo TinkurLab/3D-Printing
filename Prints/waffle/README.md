@@ -18,3 +18,4 @@ Anycubic Kossel Liner Plus
 Hatchbox PLA 1.75mm
 
 ## Notes
+* v1 don't print raft next time.  too hard to remove.

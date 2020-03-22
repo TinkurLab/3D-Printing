@@ -16,7 +16,7 @@ Use Simplify 3D's manual Job Controls to lower the print head towards the bed. L
 
 ## Drivers and Firmware
 
-See https://github.com/TinkurLab/3D-Printing (or backups in /drivers in this repo).
+See https://github.com/TinkurLab/3D-Printing or backups in /drivers in this repo.
 
 ## Settings
 
@@ -33,6 +33,8 @@ Important settings in Simplify 3D:
 - Brim: mostly always
 - Raft: as needed
 - Global G-Code Offset: X-Axis -26.60mm
+
+Also see backups in /settings in this repo.
 
 ## Resources
 

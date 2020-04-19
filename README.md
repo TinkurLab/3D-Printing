@@ -16,7 +16,7 @@ Use Simplify 3D's manual Job Controls to lower the print head towards the bed. L
 
 ## Drivers and Firmware
 
-See https://github.com/TinkurLab/3D-Printing or backups in /drivers in this repo.
+See https://www.anycubic.com/products/anycubic-kossel-3d-printer or backups in /drivers in this repo.  Use Cura to update firmware.
 
 ## Settings
 
@@ -28,6 +28,8 @@ Important settings in Simplify 3D:
 - Bed Temp 60F
 - Extrustion Width: 0.25 or 0.30mm
 - First Layer Speed: 30%
+- First Layer Height: 150%
+- First Layer Width 150%
 - Infill: 15 - 30% depending on project
 - Supports: as needed
 - Brim: mostly always

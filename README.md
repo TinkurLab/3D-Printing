@@ -41,3 +41,4 @@ Also see backups in /settings in this repo.
 ## Resources
 
 - [GCode Reference](http://reprap.org/wiki/G-code)
+- [Anycubic Kossel Wiki](http://www.lpomykal.cz/3d-printers/kossel/)

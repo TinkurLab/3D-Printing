@@ -16,7 +16,7 @@ Use Simplify 3D's manual Job Controls to lower the print head towards the bed. L
 
 ## Drivers and Firmware
 
-See https://www.anycubic.com/products/anycubic-kossel-3d-printer or backups in /drivers in this repo.  Use Cura to update firmware.
+See https://www.anycubic.com/products/anycubic-kossel-3d-printer or backups in /drivers in this repo. Use Cura to update firmware.
 
 ## Settings
 
@@ -40,5 +40,8 @@ Also see backups in /settings in this repo.
 
 ## Resources
 
-- [GCode Reference](http://reprap.org/wiki/G-code)
+- [Anycubic Kossel Product Page](https://www.anycubic.com/products/anycubic-kossel-3d-printer)
 - [Anycubic Kossel Wiki](http://www.lpomykal.cz/3d-printers/kossel/)
+- [Marlin G-code Reference](https://marlinfw.org/meta/gcode/)
+- [Marlin Firmware Configuration](https://marlinfw.org/docs/configuration/configuration.html)
+- [Reprap G-code Reference](http://reprap.org/wiki/G-code)

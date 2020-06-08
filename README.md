@@ -18,7 +18,7 @@ As of April 2020, all calibration is done in firmware to facilitate a completely
 ### Updating Firmware
 
 1. Using the https://github.com/TinkurLab/Kossel-Anycubic-Marlin-Firmware repo, update `Configuration.h` and `Configuration_adv.h` as needed. Refer to [Marlin Firmware Configuration](https://marlinfw.org/docs/configuration/configuration.html) as needed.
-1. [Upload firmware](https://marlinfw.org/docs/configuration/configuration.html#hardware-info) changes to printer.
+1. [Upload firmware](https://marlinfw.org/docs/basics/install_arduino.html) changes to printer.
 1. After uploading, run a `M502` to reset EEPROM to factory settings, `M500` to save to EEPROM, and `M503` to show current settings in SRAM.
 1. Run a test print.
 

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<profile name="Anycubic Kossel Plus" version="2020-03-22 13:55:49" app="S3D-Software 4.1.1">
-  <baseProfile></baseProfile>
+<profile name="Anycubic Kossel" version="2020-04-27 08:21:42" app="S3D-Software 4.1.1">
+  <baseProfile>Anycubic Kossel Plus(2)</baseProfile>
   <printMaterial>PLA</printMaterial>
   <printQuality>Medium</printQuality>
   <printExtruders></printExtruders>
@@ -31,8 +31,8 @@
   <startPointOriginY>0</startPointOriginY>
   <sequentialIslands>0</sequentialIslands>
   <spiralVaseMode>0</spiralVaseMode>
-  <firstLayerHeightPercentage>90</firstLayerHeightPercentage>
-  <firstLayerWidthPercentage>100</firstLayerWidthPercentage>
+  <firstLayerHeightPercentage>150</firstLayerHeightPercentage>
+  <firstLayerWidthPercentage>150</firstLayerWidthPercentage>
   <firstLayerUnderspeed>0.3</firstLayerUnderspeed>
   <useRaft>0</useRaft>
   <raftExtruder>0</raftExtruder>
@@ -46,7 +46,7 @@
   <skirtExtruder>0</skirtExtruder>
   <skirtLayers>1</skirtLayers>
   <skirtOutlines>3</skirtOutlines>
-  <skirtOffset>4</skirtOffset>
+  <skirtOffset>5</skirtOffset>
   <usePrimePillar>0</usePrimePillar>
   <primePillarExtruder>999</primePillarExtruder>
   <primePillarWidth>12</primePillarWidth>
@@ -120,12 +120,12 @@
   <applyToolheadOffsets>0</applyToolheadOffsets>
   <gcodeXoffset>0</gcodeXoffset>
   <gcodeYoffset>0</gcodeYoffset>
-  <gcodeZoffset>-26.6</gcodeZoffset>
+  <gcodeZoffset>0</gcodeZoffset>
   <overrideMachineDefinition>1</overrideMachineDefinition>
   <machineTypeOverride>1</machineTypeOverride>
   <strokeXoverride>162.6</strokeXoverride>
   <strokeYoverride>162.6</strokeYoverride>
-  <strokeZoverride>330</strokeZoverride>
+  <strokeZoverride>300</strokeZoverride>
   <originOffsetXoverride>81.3</originOffsetXoverride>
   <originOffsetYoverride>81.3</originOffsetYoverride>
   <originOffsetZoverride>0</originOffsetZoverride>
@@ -153,7 +153,7 @@
   <postProcessing></postProcessing>
   <defaultSpeed>3000</defaultSpeed>
   <outlineUnderspeed>0.5</outlineUnderspeed>
-  <solidInfillUnderspeed>0.8</solidInfillUnderspeed>
+  <solidInfillUnderspeed>0.5</solidInfillUnderspeed>
   <supportUnderspeed>0.8</supportUnderspeed>
   <rapidXYspeed>9000</rapidXYspeed>
   <rapidZspeed>2000</rapidZspeed>

@@ -17,14 +17,19 @@ As of April 2020, all calibration is done in firmware to facilitate a completely
 
 ### Updating Firmware
 
-1. Using the https://github.com/TinkurLab/Kossel-Anycubic-Marlin-Firmware repo, update `Configuration.h` and `Configuration_adv.h` as needed. Refer to [Marlin Firmware Configuration](https://marlinfw.org/docs/configuration/configuration.html) as needed.
-1. [Upload firmware](https://marlinfw.org/docs/configuration/configuration.html#hardware-info) changes to printer.
+1. Using the https://github.com/TinkurLab/Kossel-Anycubic-Marlin-Firmware repo, update `Configuration.h` and `Configuration_adv.h` as needed. Refer to [Marlin Firmware Configuration](https://marlinfw.org/docs/configuration/configuration.html) as needed. Note: most changes are suffixed with `//Adam` to indicate a change.
+1. [Upload firmware](https://marlinfw.org/docs/configuration/configuration.html#hardware-info) changes to printer via the Arduino IDE. Settings:
+
+   - Tools > Board > Arduino / Genduino Mega or Mega 2560
+   - Port > `dev/cu.SLAB_USBtoUART` or similar
+   - Baud Rate > `250000`
+
 1. After uploading, run a `M502` to reset EEPROM to factory settings, `M500` to save to EEPROM, and `M503` to show current settings in SRAM.
 1. Run a test print.
 
 ### Height and Geometry Calibration
 
-- Use `G33` to measure Delta geometry and update in firmware as needed.
+- Attach the leveling proble to the printer and use `G33` to measure Delta geometry. Use the serial connection from the Arduino IDE or Simplify 3D to execute commands. After running `G33`, this will output the new calibration settings via the serial connection. Copy these values and update in firmware as needed (normally `Configuration.h` values for `DELTA_RADIUS`, `DELTA_RADIUS`, `DELTA_HEIGHT`, `DELTA_ENDSTOP_ADJ`, and `DELTA_TOWER_ANGLE_TRIM`).
 - Use `M303` to tune PID settings for extruder and `M303 E-1` to tune bed and update in firmware as needed.
 - Ensure that @ Z = 0, there is slight tension when sliding a piece of paper between the printer bed and nozzle.
 
@@ -50,11 +55,12 @@ Important settings in Simplify 3D:
 - Brim: mostly always, 3x 5mm offset
 - Raft: as needed
 
-Also see backups in /settings in this repo.
+Also see backup settings files in `/settings` in this repo.
 
 ## Quirks and Known Issues
 
-- Extruder set to 200C will drop to 190C when fan starts. May further drop to 185C or < if doing 100% infill at full speed.
+- Extruder set to 200C will drop to 190C when fan starts. May further drop to 185C or < if doing 100% infill at full speed. Perhaps a [better thermistor and heating element](https://www.lpomykal.cz/anycubic-kossel-replacement-parts/) would help. Could also further experiment with tweaking print settings.
+- Bed is somewhat unevan. I cheat by printing things with the smallest footprint when possible to minimize the bed variation encountered. Could further experiment with getting a better bed surface, better leveling the bed, getting a bed that can be leveled, or using a virtual level grid (via Marlin).
 
 ## Resources
 

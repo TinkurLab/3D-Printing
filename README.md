@@ -18,7 +18,7 @@ As of April 2020, all calibration is done in firmware to facilitate a completely
 ### Updating Firmware
 
 1. Using the https://github.com/TinkurLab/Kossel-Anycubic-Marlin-Firmware repo, update `Configuration.h` and `Configuration_adv.h` as needed. Refer to [Marlin Firmware Configuration](https://marlinfw.org/docs/configuration/configuration.html) as needed. Note: most changes are suffixed with `//Adam` to indicate a change.
-1. [Upload firmware](https://marlinfw.org/docs/configuration/configuration.html#hardware-info) changes to printer via the Arduino IDE. Settings:
+1. Compile the code to [upload firmware](https://marlinfw.org/docs/configuration/configuration.html#hardware-info) changes to printer via the Arduino IDE. Settings:
 
    - Tools > Board > Arduino / Genduino Mega or Mega 2560
    - Port > `dev/cu.SLAB_USBtoUART` or similar
@@ -29,7 +29,7 @@ As of April 2020, all calibration is done in firmware to facilitate a completely
 
 ### Height and Geometry Calibration
 
-- Attach the leveling proble to the printer and use `G33` to measure Delta geometry. Use the serial connection from the Arduino IDE or Simplify 3D to execute commands. After running `G33`, this will output the new calibration settings via the serial connection. Copy these values and update in firmware as needed (normally `Configuration.h` values for `DELTA_RADIUS`, `DELTA_RADIUS`, `DELTA_HEIGHT`, `DELTA_ENDSTOP_ADJ`, and `DELTA_TOWER_ANGLE_TRIM`).
+- Attach the leveling proble to the printer and use `G33 V2` to measure Delta geometry. Use the serial connection from the Arduino IDE or Simplify 3D to execute commands. After running `G33 V2`, this will output the new calibration settings via the serial connection. Copy these values and update in firmware as needed (normally `Configuration.h` values for `DELTA_RADIUS`, `DELTA_RADIUS`, `DELTA_HEIGHT`, `DELTA_ENDSTOP_ADJ`, and `DELTA_TOWER_ANGLE_TRIM`).
 - Use `M303` to tune PID settings for extruder and `M303 E-1` to tune bed and update in firmware as needed.
 - Ensure that @ Z = 0, there is slight tension when sliding a piece of paper between the printer bed and nozzle.
 
